@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- indica il tipo di documentazione che è HTML5-->
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+        <meta charset="utf-8"> <!-- ci indica come codificare i caratteri della pagina-->
+    </head> <!-- in testata vengono inserite informazioni che non verranno visualizzate e che riguardano i documenti privati del sito, autori ecc ecc-->
+  <body>
+    <main> <!-- il main è la parte importante per la ricerca poi della pagina in internet ed è unico -->
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Action indica dove inviamo i dati-->
+            <fieldset> <!-- serve per raggruppare i gli elementi input e i label-->
+                <legend>Is yout cat an indoor or outdoor cat?</legend> <!-- serve per aggiungere una didascalia-->
+            <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked> Indoor</label>  <!-- associo un bottone radio con il testo indoor, id serve riconoscere i dati associati-->
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            </fieldset>
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input id="Loving" value="Loving" type="checkbox" name="personality" checked> <label for="loving">Loving</label>
+                <input id="lazy" value="lazy" type="checkbox" name="personality"><label for="lazy">Lazy</label>
+                <input id="energetic" value="energetic" type="checkbox" name="personality"> <label for="energetic">Energetic</label>
+
+            </fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required> <!-- serve per permette all'utente di inserire dei dati-->
+        </form>         <!-- TYPE indica il tipo di dato, name identifica un riferimento, placeholder indica cosa inserire, required indica l'obbligo-->
+        <button type="submit">Submit</button>
+      </section>
+    </main>
+    <footer>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></footer>
+  </body>
+</html>
